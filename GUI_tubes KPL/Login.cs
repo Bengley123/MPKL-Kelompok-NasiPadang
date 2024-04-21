@@ -104,8 +104,6 @@ namespace GUI_tubes_KPL
         private void login_FormClosing(object sender, FormClosingEventArgs e)
         {
             string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "sampahData.json");
-
-            // Delete the JSON file if it exists
             if (File.Exists(filePath))
             {
                 try
@@ -120,6 +118,11 @@ namespace GUI_tubes_KPL
         }
 
         private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textUsername_TextChanged(object sender, EventArgs e)
         {
 
         }
