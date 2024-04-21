@@ -44,7 +44,6 @@ namespace GUI_tubes_KPL
 
                 // Create an instance of InputMaterialForm
                 dashboard db = new dashboard();
-
                 // Show the InputMaterialForm
                 db.Show();
             }
@@ -59,6 +58,11 @@ namespace GUI_tubes_KPL
             this.Hide();
             Login login = new Login();
             login.Show();   
+        }
+
+        private void emailText_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
