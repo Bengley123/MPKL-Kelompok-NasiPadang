@@ -41,10 +41,8 @@ namespace GUI_tubes_KPL
                 MessageBox.Show("Registration successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 // Hide the current form (Form1)
                 this.Hide();
-
                 // Create an instance of InputMaterialForm
                 dashboard db = new dashboard();
-
                 // Show the InputMaterialForm
                 db.Show();
             }
@@ -59,6 +57,11 @@ namespace GUI_tubes_KPL
             this.Hide();
             Login login = new Login();
             login.Show();   
+        }
+
+        private void passwordText_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
